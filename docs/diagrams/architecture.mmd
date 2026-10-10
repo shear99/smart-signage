@@ -1,0 +1,8 @@
+flowchart LR
+ A[관리 웹: 영상·자막·일정] --> B[Python 서버: 검증·불변 revision]
+ B -->|WebSocket 이벤트 / 재접속 snapshot| C[Pi 동기화 에이전트]
+ B -->|HTTP Range 다운로드| C
+ C --> D[manifest·파일 검증]
+ D --> E[active.json 원자 교체]
+ E --> F[C++ / Qt / QML 표시]
+ F --> G[HDMI 안내 화면]

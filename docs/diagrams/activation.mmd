@@ -1,0 +1,10 @@
+flowchart LR
+ A[목표 revision / generation] --> B[staging 다운로드]
+ B --> C{전체 파일 검증}
+ C -->|성공| D[불변 bundle 완성]
+ D --> E[active.json 원자 교체]
+ E --> F{Qt 계약 파싱}
+ F -->|성공| G[새 snapshot 적용]
+ C -->|실패| H[기존 활성 콘텐츠 유지]
+ F -->|실패| H
+ G --> I[현재 영상 종료 후 목록 적용]

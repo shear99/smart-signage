@@ -1,0 +1,182 @@
+{
+  "snapshot_date": "2026-10-10",
+  "source_head": "4fa365be89b10181467470ca6940d97c736f15ce",
+  "scope": "Selected working-tree files; agent.py contained uncommitted changes. No history, deployment configuration, runtime content, or media copied.",
+  "files": [
+    {
+      "source": "display-client/src/active_bundle_watcher.cpp",
+      "sha256": "5e7a5b61b2a4f422b113b60d1df7b5ed522e6408706d852fa1f637014e2477d9",
+      "export": "display-client/src/active_bundle_watcher.cpp"
+    },
+    {
+      "source": "display-client/src/active_bundle_watcher.h",
+      "sha256": "b1542a1ae74d1a700e89f570fa9914ad7eb16f5ff8ee3276bc58b5eb4ed1778b",
+      "export": "display-client/src/active_bundle_watcher.h"
+    },
+    {
+      "source": "display-client/src/bundle_parser.cpp",
+      "sha256": "194bb6f5be39e095ec0a22ea6984954f5bac0bca920fb5936062379f8127e0cc",
+      "export": "display-client/src/bundle_parser.cpp"
+    },
+    {
+      "source": "display-client/src/bundle_parser.h",
+      "sha256": "4a08742f4593ced6cdda780b8a4a983d4baf6bf7f0a0c6dea6ed8868b376e3ec",
+      "export": "display-client/src/bundle_parser.h"
+    },
+    {
+      "source": "display-client/src/bundle_types.h",
+      "sha256": "d801df438e968876ce95d661ebb25559fc048ae136fc3598d53a64833d2a0dc7",
+      "export": "display-client/src/bundle_types.h"
+    },
+    {
+      "source": "display-client/src/clock_formatter.cpp",
+      "sha256": "b3ef333cf007c5ed9e5e20c7b7cad2d32adba18606008a7085b586f356e38e86",
+      "export": "display-client/src/clock_formatter.cpp"
+    },
+    {
+      "source": "display-client/src/clock_formatter.h",
+      "sha256": "93f84a768be0bffd65d2dbca7a83ee12488cdb50bf353142c162f57fb3bce22a",
+      "export": "display-client/src/clock_formatter.h"
+    },
+    {
+      "source": "display-client/src/display_controller.cpp",
+      "sha256": "6a7b642347a3888e77075cc8a1a5b5e91eb34a3a4f23b63df5e0a1a356c16871",
+      "export": "display-client/src/display_controller.cpp"
+    },
+    {
+      "source": "display-client/src/display_controller.h",
+      "sha256": "d65e2fd5e2d8bdffbb53538ca65e95f540ab3f2e519b64b855ee228b526a5f3c",
+      "export": "display-client/src/display_controller.h"
+    },
+    {
+      "source": "display-client/src/layout_geometry.cpp",
+      "sha256": "edd7c510bcb914f5460ffb560da5f3f83ba87cf0754eb8ca1e295ef788887a5c",
+      "export": "display-client/src/layout_geometry.cpp"
+    },
+    {
+      "source": "display-client/src/layout_geometry.h",
+      "sha256": "017b6fed3fe6e8f8ffbf373477730bafffb724bb6950935aaa74fdafd42ca0cb",
+      "export": "display-client/src/layout_geometry.h"
+    },
+    {
+      "source": "display-client/src/main.cpp",
+      "sha256": "9990f2afd7f1a6422fa42665e299ff67c3c4bac7003b7c62c0f74e2a50002ecf",
+      "export": "display-client/src/main.cpp"
+    },
+    {
+      "source": "display-client/src/playlist_navigator.cpp",
+      "sha256": "c2305b3f3a7651ae44fd8dde076b9f0eae520a7c8e33a39150332bb3632591fc",
+      "export": "display-client/src/playlist_navigator.cpp"
+    },
+    {
+      "source": "display-client/src/playlist_navigator.h",
+      "sha256": "5c9a77789ab44016c99bbdac1797cd665ce96908c4c6bc154bc4fc17d9424de4",
+      "export": "display-client/src/playlist_navigator.h"
+    },
+    {
+      "source": "display-client/src/schedule_projection.cpp",
+      "sha256": "ead93b12d88be93519370d78163f93ef12596894168596c61ea13066aa3f3ca5",
+      "export": "display-client/src/schedule_projection.cpp"
+    },
+    {
+      "source": "display-client/src/schedule_projection.h",
+      "sha256": "2e938b0f56c87e9433d8e3f2ffe7f2f56e73dbd3f97b76aac84f3c227b56bed5",
+      "export": "display-client/src/schedule_projection.h"
+    },
+    {
+      "source": "display-client/src/screen_coordinator.cpp",
+      "sha256": "bed50d39fceb4455dd2afc13f613adba52f4a764cbea1ec5cbbd5395ca747f27",
+      "export": "display-client/src/screen_coordinator.cpp"
+    },
+    {
+      "source": "display-client/src/screen_coordinator.h",
+      "sha256": "0869f0d361f87e3b532d6daebe539903855d22d1481da5e22cc46f14b04bae0e",
+      "export": "display-client/src/screen_coordinator.h"
+    },
+    {
+      "source": "display-client/src/screen_selector.cpp",
+      "sha256": "910eecc90fb9bdc47c9ba613f2d5a1deaf02fbeb88ad8a9eb1df5e907fc64f53",
+      "export": "display-client/src/screen_selector.cpp"
+    },
+    {
+      "source": "display-client/src/screen_selector.h",
+      "sha256": "43013d0e1b4d0e2df535c538ab20c01151f5acd83ee80139fb60c8f26ebc245c",
+      "export": "display-client/src/screen_selector.h"
+    },
+    {
+      "source": "display-client/qml/Main.qml",
+      "sha256": "0edce28be48e0dac9aa0d3a5ecc82a33a55decff3fcc8c673fde6fdd06e2a5ef",
+      "export": "display-client/qml/Main.qml"
+    },
+    {
+      "source": "display-client/schemas/active.schema.json",
+      "sha256": "dce23d8552592e01d1daa4f9067bb09b22ae7d248ec62906f81685db53308fca",
+      "export": "display-client/schemas/active.schema.json"
+    },
+    {
+      "source": "display-client/schemas/bundle.schema.json",
+      "sha256": "5912c56bcbc287b204c85d21b57037514282b92e756c66933db1ef17ba7eefe4",
+      "export": "display-client/schemas/bundle.schema.json"
+    },
+    {
+      "source": "display-client/schemas/display.schema.json",
+      "sha256": "ea587d380477e26f612ce0af09eccd7a1ac7beacbb4fc611f14414954c23cf9e",
+      "export": "display-client/schemas/display.schema.json"
+    },
+    {
+      "source": "display-client/schemas/playlist.schema.json",
+      "sha256": "2a2aa3629c9bdd4b82ae390671fc6a473780242a39ee3c5a59985196cd87facc",
+      "export": "display-client/schemas/playlist.schema.json"
+    },
+    {
+      "source": "display-client/schemas/schedule.schema.json",
+      "sha256": "6cd71127f9718d690fc25796e7b670399f510be23c3ced0485e0ef9e85f7c518",
+      "export": "display-client/schemas/schedule.schema.json"
+    },
+    {
+      "source": "display-client/schemas/subtitle.schema.json",
+      "sha256": "e59285b0adce4daa16c86923d4c036a0d2cf3d9bcebb075e46ff4d7f5d7de919",
+      "export": "display-client/schemas/subtitle.schema.json"
+    },
+    {
+      "source": "display-client/CMakeLists.txt",
+      "sha256": "f6de0afa7baba1c618704646ca0ecda57d944319b336afeded19b759a743f3f8",
+      "export": "display-client/CMakeLists.txt"
+    },
+    {
+      "source": "display-client/tests/CMakeLists.txt",
+      "sha256": "7e995f36a47e0e0e50f01985fda6a4237267607c642b8dd9c52f2dcde657a537",
+      "export": "display-client/tests/CMakeLists.txt"
+    },
+    {
+      "source": "display-client/tests/test_display_core.cpp",
+      "sha256": "62b2ae7bc9a2df8f5ca4ae2567fac1d418738fa0830ae362c44f39ff9e5d4394",
+      "export": "display-client/tests/test_display_core.cpp"
+    },
+    {
+      "source": "display-client/tests/check_bundle.cpp",
+      "sha256": "0fc3e8da5c04397c37969624cc5c096ef78b7f0abafc9bd679bc078e43629223",
+      "export": "display-client/tests/check_bundle.cpp"
+    },
+    {
+      "source": "display-client/tests/server_compiler_contract.py",
+      "sha256": "dea3346b2de7245c23c64e93b577e82a53381e4aea7d41746fad028357a507b4",
+      "export": "display-client/tests/server_compiler_contract.py"
+    },
+    {
+      "source": "src/PRIVATE_PACKAGE/storage.py",
+      "sha256": "c3ca0a806d18c44cba5a2dd8c3550d26c454519cc801ecb6409ded2ef196df17",
+      "export": "src/smart_signage/storage.py"
+    },
+    {
+      "source": "src/PRIVATE_PACKAGE/content.py",
+      "sha256": "773232afdaa390b26a9328c21fdc6d7ff28496e96c488c8ecf3cc0bbe36026db",
+      "export": "src/smart_signage/content.py"
+    },
+    {
+      "source": "src/PRIVATE_PACKAGE/agent.py",
+      "sha256": "892fa6136e08e03a4d2ba80a8fc90b1359dcecadf4cdb617ee3c62ad51990e3a",
+      "export": "src/smart_signage/agent.py"
+    }
+  ]
+}
