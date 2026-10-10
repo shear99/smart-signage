@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/display/active-v1.json",
+  "title": "Signage active display bundle",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "bundleId",
+    "path",
+    "revision",
+    "generation",
+    "manifestSha256",
+    "activatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "bundleId": {
+      "type": "string",
+      "pattern": "^r[1-9][0-9]*-[0-9a-f]{16}$"
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^releases/r[1-9][0-9]*-[0-9a-f]{16}$"
+    },
+    "revision": {"type": "integer", "minimum": 1},
+    "generation": {"type": "integer", "minimum": 1},
+    "manifestSha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "activatedAt": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": false
+}

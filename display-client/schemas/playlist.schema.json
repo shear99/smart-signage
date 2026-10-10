@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/display/playlist-v1.json",
+  "title": "Signage video playlist",
+  "type": "object",
+  "required": ["schemaVersion", "repeat", "items"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "repeat": {"const": "all"},
+    "items": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "order",
+          "kind",
+          "path",
+          "fit",
+          "muted",
+          "volume"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "order": {"type": "integer", "minimum": 0, "maximum": 10000},
+          "kind": {"const": "video"},
+          "path": {
+            "type": "string",
+            "pattern": "^media/(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+          },
+          "fit": {
+            "type": ["string", "null"],
+            "enum": ["fit", "crop", null]
+          },
+          "muted": {"type": ["boolean", "null"]},
+          "volume": {
+            "type": ["number", "null"],
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

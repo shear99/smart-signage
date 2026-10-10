@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/display/bundle-v1.json",
+  "title": "Signage display bundle",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "display",
+    "playlist",
+    "schedule",
+    "subtitle",
+    "activation"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "display": {"const": "display.json"},
+    "playlist": {"const": "playlist.json"},
+    "schedule": {"const": "schedule.json"},
+    "subtitle": {"const": "subtitle.json"},
+    "activation": {
+      "type": "object",
+      "required": ["settings", "playlist", "emergency"],
+      "properties": {
+        "settings": {"const": "immediate"},
+        "playlist": {"const": "after_current_item"},
+        "emergency": {"const": "immediate"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

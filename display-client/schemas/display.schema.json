@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/display/display-v1.json",
+  "title": "Signage display settings",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "layoutMode",
+    "defaultMediaFit",
+    "safeInsets",
+    "audio"
+  ],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "layoutMode": {"enum": ["dashboard", "fullscreen_media"]},
+    "defaultMediaFit": {"enum": ["fit", "crop"]},
+    "safeInsets": {
+      "type": "object",
+      "required": ["left", "top", "right", "bottom"],
+      "properties": {
+        "left": {"type": "number", "minimum": 0, "maximum": 0.1},
+        "top": {"type": "number", "minimum": 0, "maximum": 0.1},
+        "right": {"type": "number", "minimum": 0, "maximum": 0.1},
+        "bottom": {"type": "number", "minimum": 0, "maximum": 0.1}
+      },
+      "additionalProperties": false
+    },
+    "audio": {
+      "type": "object",
+      "required": ["muted", "volume"],
+      "properties": {
+        "muted": {"type": "boolean"},
+        "volume": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
